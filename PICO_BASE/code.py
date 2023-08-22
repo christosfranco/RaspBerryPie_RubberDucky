@@ -1,4 +1,4 @@
-# License : GPLv2.0
+
 # copyright (c) 2023  Dave Bailey
 # Author: Dave Bailey (dbisu, @daveisu)
 # Pico and Pico W board support

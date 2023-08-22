@@ -1,0 +1,7 @@
+WINDOWS d
+WINDOWS r
+DELAY 2000
+
+REM open terminal in admin mode
+STRING cmd
+CTRL SHIFT ENTER
